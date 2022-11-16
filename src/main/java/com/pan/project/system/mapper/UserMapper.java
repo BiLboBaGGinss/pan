@@ -6,11 +6,9 @@ import com.pan.project.system.domain.User;
 
 /**
  * @author : Pan Yanqing
- * @description : 
+ * @description :
  * @date : 2022-11-08 14:32
  */
 public interface UserMapper extends BaseMapper<User> {
-
-    IPage<User> selectPageVo(IPage<?> page, User user);
 
 }

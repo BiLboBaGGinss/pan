@@ -17,7 +17,7 @@ import java.util.List;
 
 /**
  * @author : Pan Yanqing
- * @description :
+ * @description : Swagger配置
  * @date : 2022-11-08 15:04
  */
 @Configuration

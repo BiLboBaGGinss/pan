@@ -4,29 +4,33 @@ import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+
+import java.io.Serializable;
 import java.util.Date;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+
+import lombok.*;
+import lombok.experimental.Accessors;
 
 /**
  * @author : Pan Yanqing
- * @description : 
+ * @description : 系统用户实体
  * @date : 2022-11-08 14:32
  */
-/**
-    * 用户表
-    */
-@ApiModel(value="用户表")
 @Data
-@Builder
+@EqualsAndHashCode(callSuper = false)
+@TableName("`user`")
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName(value = "`user`")
-public class User{
+@Accessors(chain = true)
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@ApiModel(value = "User", description = "系统用户实体")
+public class User extends PageBean<User> implements Serializable {
+
     /**
      * 主键
      */
@@ -37,8 +41,15 @@ public class User{
     /**
      * 用户名
      */
-    @TableField(value = "`name`")
+    @TableField(value = "login_name")
     @ApiModelProperty(value="用户名")
+    private String loginName;
+
+    /**
+     * 名称
+     */
+    @TableField(value = "`name`")
+    @ApiModelProperty(value="名称")
     private String name;
 
     /**
@@ -81,6 +92,7 @@ public class User{
      */
     @TableField(value = "create_time")
     @ApiModelProperty(value="创建时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date createTime;
 
     /**
@@ -88,6 +100,7 @@ public class User{
      */
     @TableField(value = "last_login_time")
     @ApiModelProperty(value="上次登录时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date lastLoginTime;
 
     /**
@@ -95,13 +108,6 @@ public class User{
      */
     @TableField(value = "last_update_time")
     @ApiModelProperty(value="上次更新时间")
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date lastUpdateTime;
-
-    @TableField(exist = false)
-    @ApiModelProperty(value="页数")
-    private int page;
-
-    @TableField(exist = false)
-    @ApiModelProperty(value="单页数量")
-    private int size;
 }
