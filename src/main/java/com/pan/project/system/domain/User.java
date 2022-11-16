@@ -1,5 +1,6 @@
 package com.pan.project.system.domain;
 
+import cn.dev33.satoken.stp.SaTokenInfo;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -110,4 +111,8 @@ public class User extends PageBean<User> implements Serializable {
     @ApiModelProperty(value="上次更新时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss", timezone = "GMT+8")
     private Date lastUpdateTime;
+
+    @TableField(exist = false)
+    @ApiModelProperty(value="token信息")
+    private SaTokenInfo tokenInfo;
 }

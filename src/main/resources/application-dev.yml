@@ -26,7 +26,7 @@ spring:
     auto-commit: true
     idle-timeout: 30000
     pool-name: SpringBootPanHikariCP
-    max-lifetime: 60000
+    max-lifetime: 500000
     connection-timeout: 30000
   logging:
     level:

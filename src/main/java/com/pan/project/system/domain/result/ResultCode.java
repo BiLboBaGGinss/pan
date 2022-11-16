@@ -26,6 +26,7 @@ public enum ResultCode {
     USER_LOGIN_ERROR(203,"登陆失败，账号或者密码有误"),
     NOT_PERMISSION(204,"无权限访问"),
     REPEAT_USER_LOGINNAME(205,"用户名已存在"),
+    USER_TOKEN_INVALID(299,"用户Token无效"),
 
     /* 业务错误 301 - 399*/
     DATA_NOT_FOUND(301,"没有数据");

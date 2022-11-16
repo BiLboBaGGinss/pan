@@ -1,4 +1,4 @@
-package com.pan.framework.config;
+package com.pan.framework.config.satoken;
 
 import cn.dev33.satoken.interceptor.SaInterceptor;
 import org.springframework.context.annotation.Configuration;

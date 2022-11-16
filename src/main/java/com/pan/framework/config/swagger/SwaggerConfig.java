@@ -1,4 +1,4 @@
-package com.pan.framework.config;
+package com.pan.framework.config.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

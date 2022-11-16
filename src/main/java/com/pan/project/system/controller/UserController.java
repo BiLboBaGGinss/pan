@@ -29,7 +29,7 @@ import java.util.Date;
 @RequestMapping("/system/")
 @Slf4j
 @Api(tags = "用户相关接口")
-//@SaCheckLogin
+@SaCheckLogin
 public class UserController {
 
     @Resource
@@ -57,7 +57,10 @@ public class UserController {
         //生产盐字符串
         String salt = SaltUtils.getsalt(10);
         user.setPassword(MD5Util.inputPassToFromPass(user.getPassword(), salt)).setSalt(salt).setCreateTime(new Date());
-
-        return null;
+        if (userService.save(user)){
+            return Result.success();
+        }else{
+            return Result.error();
+        }
     }
 }

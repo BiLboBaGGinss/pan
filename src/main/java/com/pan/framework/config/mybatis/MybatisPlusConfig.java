@@ -1,4 +1,4 @@
-package com.pan.framework.config;
+package com.pan.framework.config.mybatis;
 
 import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.autoconfigure.ConfigurationCustomizer;
