@@ -1,13 +1,12 @@
 package com.pan.project.system.controller;
 
 import cn.dev33.satoken.stp.StpUtil;
-import cn.dev33.satoken.util.SaResult;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.pan.project.system.domain.User;
 import com.pan.project.system.domain.result.Result;
 import com.pan.project.system.domain.result.ResultCode;
 import com.pan.project.system.service.UserService;
-import com.pan.project.system.utils.MD5Util;
+import com.pan.project.common.utils.MD5Util;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;

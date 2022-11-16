@@ -1,10 +1,9 @@
 package com.pan.project.system.domain.result;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.pan.project.system.utils.StringUtils;
-import com.pan.project.system.utils.constant.HttpStatus;
+import com.pan.project.common.utils.StringUtils;
+import com.pan.project.common.utils.constant.HttpStatus;
 
-import java.io.Serializable;
 import java.util.HashMap;
 
 /**

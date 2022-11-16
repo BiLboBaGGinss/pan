@@ -1,4 +1,4 @@
-package com.pan.project.system.utils.constant;
+package com.pan.project.common.utils.constant;
 
 import io.jsonwebtoken.Claims;
 
