@@ -1,7 +1,7 @@
-package com.pan.project.common.utils;
+package com.pan.common.utils;
 
 import cn.hutool.core.text.StrFormatter;
-import com.pan.project.common.utils.constant.Constants;
+import com.pan.common.utils.constant.Constants;
 import org.springframework.util.AntPathMatcher;
 
 import java.util.*;

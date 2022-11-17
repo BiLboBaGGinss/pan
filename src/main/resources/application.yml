@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: prod
 ############## Sa-Token 配置 (文档: https://sa-token.cc) ##############
 sa-token:
   # token名称 (同时也是cookie名称)

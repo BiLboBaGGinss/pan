@@ -1,4 +1,4 @@
-package com.pan.project.common.utils.constant;
+package com.pan.common.utils.constant;
 
 /**
  * 返回状态码

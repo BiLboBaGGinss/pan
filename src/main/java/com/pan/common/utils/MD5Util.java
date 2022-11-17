@@ -1,4 +1,4 @@
-package com.pan.project.common.utils;
+package com.pan.common.utils;
 
 import org.apache.commons.codec.digest.DigestUtils;
 
