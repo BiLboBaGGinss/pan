@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.pan.project.moto.mapper.MotoBrandMapper">
+  <resultMap id="BaseResultMap" type="com.pan.project.moto.domain.MotoBrand">
+    <!--@mbg.generated-->
+    <!--@Table moto_brand-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="ad_model" jdbcType="VARCHAR" property="adModel" />
+    <result column="aleph" jdbcType="VARCHAR" property="aleph" />
+    <result column="auth_status" jdbcType="VARCHAR" property="authStatus" />
+    <result column="begin_time" jdbcType="TIMESTAMP" property="beginTime" />
+    <result column="brand_desc" jdbcType="VARCHAR" property="brandDesc" />
+    <result column="brand_energy_type" jdbcType="INTEGER" property="brandEnergyType" />
+    <result column="brand_id" jdbcType="BIGINT" property="brandId" />
+    <result column="brand_logo" jdbcType="VARCHAR" property="brandLogo" />
+    <result column="brand_name" jdbcType="VARCHAR" property="brandName" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="exist_sale_goods" jdbcType="INTEGER" property="existSaleGoods" />
+    <result column="expire_auth" jdbcType="VARCHAR" property="expireAuth" />
+    <result column="goods_count" jdbcType="INTEGER" property="goodsCount" />
+    <result column="keywords" jdbcType="VARCHAR" property="keywords" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="new_car_third_party_link" jdbcType="VARCHAR" property="newCarThirdPartyLink" />
+    <result column="product_type" jdbcType="VARCHAR" property="productType" />
+    <result column="shop_id" jdbcType="INTEGER" property="shopId" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="spelling" jdbcType="VARCHAR" property="spelling" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="tag" jdbcType="VARCHAR" property="tag" />
+    <result column="tight_stock" jdbcType="INTEGER" property="tightStock" />
+    <result column="trade_is_valid" jdbcType="INTEGER" property="tradeIsValid" />
+    <result column="trade_valid" jdbcType="INTEGER" property="tradeValid" />
+    <result column="create_by" jdbcType="VARCHAR" property="createBy" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_by" jdbcType="VARCHAR" property="updateBy" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, ad_model, aleph, auth_status, begin_time, brand_desc, brand_energy_type, brand_id, 
+    brand_logo, brand_name, end_time, exist_sale_goods, expire_auth, goods_count, keywords, 
+    mobile, new_car_third_party_link, product_type, shop_id, sort, spelling, `status`, 
+    tag, tight_stock, trade_is_valid, trade_valid, create_by, create_time, update_by, 
+    update_time
+  </sql>
+</mapper>

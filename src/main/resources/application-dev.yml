@@ -12,8 +12,8 @@ spring:
           password: Pyq970603@_.
           driver-class-name: com.mysql.cj.jdbc.Driver # 3.2.0开始支持SPI可省略此配置
           type: com.zaxxer.hikari.HikariDataSource
-        xxlJob:
-          url: jdbc:mysql://sh-cynosdbmysql-grp-hvr8j3bo.sql.tencentcdb.com:28069/xxl_job_dev?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
+        moto:
+          url: jdbc:mysql://sh-cynosdbmysql-grp-hvr8j3bo.sql.tencentcdb.com:28069/moto_dev?useUnicode=true&characterEncoding=UTF-8&useSSL=false&autoReconnect=true&failOverReadOnly=false&serverTimezone=GMT%2B8
           username: root
           password: Pyq970603@_.
           driver-class-name: com.mysql.jdbc.Driver
